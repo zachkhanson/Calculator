@@ -2,12 +2,10 @@
 
 wxIMPLEMENT_APP(CalcApp);
 
-CalcApp::CalcApp()
-{
+CalcApp::CalcApp(){
 }
 
-CalcApp::~CalcApp()
-{
+CalcApp::~CalcApp(){
 }
 
 bool CalcApp::OnInit()
