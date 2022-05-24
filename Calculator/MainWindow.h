@@ -51,13 +51,13 @@ public:
 	
 
 	
-	wxString mFirstNum;
-	double mFirstValue;
-	wxString mSecondNum;
-	double mSecondValue;
-	char mOperator;
-	wxString mAnswer;
-	double mResult;
+	wxString mFirstNum = "";
+	double mFirstValue = 0;
+	wxString mSecondNum = "";
+	double mSecondValue = 0;
+	char mOperator = ' ';
+	wxString mAnswer = "";
+	double mResult = 0;
 
 	wxDECLARE_EVENT_TABLE();
 };

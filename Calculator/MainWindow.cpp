@@ -3,7 +3,6 @@
 #include "ButtonFactory.h"
 
 
-
 wxBEGIN_EVENT_TABLE(MainWindow, wxFrame)
 	EVT_BUTTON(10001,b1Clicked)
 	EVT_BUTTON(10002, b2Clicked)
