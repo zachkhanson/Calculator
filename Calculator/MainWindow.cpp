@@ -1,5 +1,7 @@
 #include "MainWindow.h"
 #include <cmath>
+#include "ButtonFactory.h"
+
 
 
 wxBEGIN_EVENT_TABLE(MainWindow, wxFrame)
@@ -26,13 +28,13 @@ wxBEGIN_EVENT_TABLE(MainWindow, wxFrame)
 wxEND_EVENT_TABLE()
 
 MainWindow::MainWindow() : wxFrame(nullptr, wxID_ANY, "Calculator", wxPoint(25, 25), wxSize(600, 550)) {
-	calcDisplay = new wxTextCtrl(this,11000, "", wxPoint(10, 50), wxSize(550, 200));
+	calcDisplay = new wxTextCtrl(this, 11000, "", wxPoint(10, 50), wxSize(550, 200));
 	b1 = new wxButton(this, 10001, "1", wxPoint(15, 400), wxSize(150, 50));
-	b2 = new wxButton(this, 10002, "2", wxPoint(165,400), wxSize(150, 50));
-	b3 = new wxButton(this, 10003, "3", wxPoint(315,400), wxSize(150, 50));
+	b2 = new wxButton(this, 10002, "2", wxPoint(165, 400), wxSize(150, 50));
+	b3 = new wxButton(this, 10003, "3", wxPoint(315, 400), wxSize(150, 50));
 	b4 = new wxButton(this, 10004, "4", wxPoint(15, 350), wxSize(150, 50));
-	b5 = new wxButton(this, 10005, "5", wxPoint(165,350), wxSize(150, 50));
-	b6 = new wxButton(this, 10006, "6", wxPoint(315,350), wxSize(150, 50));
+	b5 = new wxButton(this, 10005, "5", wxPoint(165, 350), wxSize(150, 50));
+	b6 = new wxButton(this, 10006, "6", wxPoint(315, 350), wxSize(150, 50));
 	b7 = new wxButton(this, 10007, "7", wxPoint(15, 300), wxSize(150, 50));
 	b8 = new wxButton(this, 10008, "8", wxPoint(165, 300), wxSize(150, 50));
 	b9 = new wxButton(this, 10009, "9", wxPoint(315, 300), wxSize(150, 50));
@@ -47,11 +49,11 @@ MainWindow::MainWindow() : wxFrame(nullptr, wxID_ANY, "Calculator", wxPoint(25, 
 	bMod = new wxButton(this, 10018, "%", wxPoint(515, 350), wxSize(50, 50));
 	bBin = new wxButton(this, 10019, "BIN", wxPoint(515, 400), wxSize(50, 50));
 	bHex = new wxButton(this, 10020, "HEX", wxPoint(515, 450), wxSize(50, 50));
-}
 
-
-MainWindow::~MainWindow() {
 }
+	MainWindow::~MainWindow() {
+	}
+
 #pragma region NumberButtons
 void MainWindow::b1Clicked(wxCommandEvent& evt) {
 	calcDisplay->AppendText("1");

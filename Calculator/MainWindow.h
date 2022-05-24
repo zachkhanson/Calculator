@@ -49,6 +49,8 @@ public:
 	wxButton* bBin = nullptr;
 	wxButton* bHex = nullptr;
 	
+
+	
 	wxString mFirstNum;
 	double mFirstValue;
 	wxString mSecondNum;
